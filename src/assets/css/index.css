@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 70rem;
+}
+
+.bggradient {
+  background-image: url(../imgs/bg/overlay.png),
+    linear-gradient(90deg, rgba(93, 100, 187, 1) 0%, rgba(210, 91, 171, 1) 100%);
+  background-blend-mode: luminosity;
+  color: white;
+  background-size: cover;
+}
+
+.vheader {
+  padding-top: 3em;
+}
+
+.sticky {
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+  transition: ease-in 0.35s;
+}
+
+.fixed {
+  transition: ease-in 0.35s;
+}
+
+.orangebtn {
+  background: radial-gradient(
+    circle,
+    rgba(238, 120, 78, 1) 0%,
+    rgba(225, 99, 93, 1) 100%
+  );
+  border: 0;
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  width: 8rem;
+}
+
+.orangebtn:hover {
+  background: radial-gradient(
+    circle,
+    rgba(180, 93, 62, 1) 0%,
+    rgba(180, 79, 74, 1) 100%
+  );
+}
+
+.bgblue {
+  background: #eeeef7;
+}
+
+.adjust {
+  padding-top: 125px;
+}
+
+@media only screen and (min-width: 992px) {
+  .bggradient {
+    height: 100vh;
+  }
+  .bgblue {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .bggradient {
+    height: 60em;
+  }
+  .bgblue {
+    max-height: 1825px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #ChartTwo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #Chart {
+    display: none;
+  }
+}
+
+.bggradient2 {
+  height: auto;
+}
